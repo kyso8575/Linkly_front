@@ -3,23 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LinkShort</title>
-    <link rel="stylesheet" href="./index.css" />
+    <title>Linkly</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/index.css" />
+    <script src="./js/loadHtml.js"></script>
   </head>
-  <body>
-    <div class="navbar">
-      <div class="logo">
-        <img src="favicon.png" alt="LinkShort Logo" />
-        <span>LinkLy</span>
-      </div>
-      <div class="nav-links">
-        <a href="#">Features</a>
-        <a href="#">Pricing</a>
-        <a href="#">Analytics</a>
-        <a href="#">Login</a>
-        <a href="#">Sign Up</a>
-      </div>
-    </div>
+  <body onload="loadHtml('header', 'header.html'); loadHtml('footer', 'footer.html');">
+
+    <div id="header"></div>
 
     <div class="container">
       <div class="input-container">
@@ -53,8 +44,7 @@
       </div>
     </div>
 
-    <div class="footer">
-      <span>&copy; 2025 LinkShort. All rights reserved.</span>
-    </div>
+    <div id="footer"></div>
+
   </body>
 </html>

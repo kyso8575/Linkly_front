@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LinkLy</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/history.css" />
+    <script src="./js/loadHtml.js"></script>
+  </head>
+  <body
+    onload="loadHtml('header', 'header.html'); loadHtml('footer', 'footer.html');"
+  >
+    <div id="header"></div>
+
+    <main>
+      <div class="url-input">
+        <h2>Shorten Your URL</h2>
+        <input type="text" placeholder="Enter long URL here..." />
+        <button>Generate</button>
+        <button>Generate QR</button>
+      </div>
+
+      <div class="url-history">
+        <h3>History</h3>
+        <div class="history-link">
+          <div class="urls">
+            <a href="#" class="new">https://shortqr.com/abc123</a>
+            <p>Original: https://www.example.com/very-long-url-example</p>
+          </div>
+          <div class="buttons">
+            <button>QR Code</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div class="history-link">
+          <div class="urls">
+            <a href="#" class="new">https://shortqr.com/def456</a>
+            <p class="old">
+              Original: https://anotherexample.com/another-long-url-example
+            </p>
+          </div>
+          <div class="buttons">
+            <button>QR Code</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div id="footer"></div>
+  </body>
+</html>
