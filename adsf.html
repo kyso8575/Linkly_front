@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ShortQR</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        padding: 10px 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      header h1 {
+        font-size: 20px;
+      }
+      header nav a {
+        margin-left: 20px;
+        color: #ff5733;
+        text-decoration: none;
+      }
+      main {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+      }
+      .url-input,
+      .url-history {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .url-input input[type="text"] {
+        width: calc(100% - 180px);
+        padding: 10px;
+        margin-right: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .url-input button {
+        background-color: #ff5733;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .url-history div {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        align-items: center;
+      }
+      .url-history button {
+        background-color: white;
+        color: #ff5733;
+        border: 1px solid #ff5733;
+        border-radius: 5px;
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #eaeaea;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ShortQR</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#" style="color: red">URL Shortener</a>
+        <a href="#">Analytics</a>
+      </nav>
+    </header>
+    <main>
+      <div class="url-input">
+        <h2>Shorten Your URL</h2>
+        <input type="text" placeholder="Enter long URL here..." />
+        <button>Generate</button>
+        <button>Generate QR</button>
+      </div>
+      <div class="url-history">
+        <h3>History</h3>
+        <div>
+          <div>
+            <a href="#">https://shortqr.com/abc123</a><br />
+            <small
+              >Original: https://www.example.com/very-long-url-example</small
+            >
+          </div>
+          <div>
+            <button>Share</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <a href="#">https://shortqr.com/def456</a><br />
+            <small
+              >Original:
+              https://anotherexample.com/another-long-url-example</small
+            >
+          </div>
+          <div>
+            <button>Share</button>
+            <button>Delete</button>
+          </div>
+        </div>
+        <div>
+          <div>
+            <a href="#">https://shortqr.com/ghi789</a><br />
+            <small
+              >Original:
+              https://yetanother.com/yet-another-long-url-example</small
+            >
+          </div>
+          <div>
+            <button>Share</button>
+            <button>Delete</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>&copy; 2023 ShortQR. All rights reserved.</footer>
+  </body>
+</html>
+```
